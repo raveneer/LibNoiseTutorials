@@ -39,9 +39,9 @@ public class Tutorial4 : MonoBehaviour
 		// Get the image
 		var image = heightMapBuilder.GetTexture(_gradient);
 
-		// Set it. It may appear inverted from the example on the LibNoise site depending 
-		// on the angle at which the object is rotated/viewed.
-		renderer.material.mainTexture = image;
+        // Set it. It may appear inverted from the example on the LibNoise site depending 
+        // on the angle at which the object is rotated/viewed.
+	    GetComponent<Renderer>().material.mainTexture = image;
 
 		// We don't do the light changes for the texture, since that's beyond the scope of 
 		// this port
